@@ -1,0 +1,481 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+}
+
+/* :root {
+    --base-font-size: 30px;
+} */
+
+body {
+    background: #090E16;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    /* font-size: var(--base-font-size); */
+}
+
+header {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99.9%;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    height: 34px;
+}
+
+.social-medias img {
+    width: 32px;
+    height: 32px;
+}
+
+.esconder-mobile {
+    display: none;
+}
+
+.esconder-desktop {
+    display: inline;
+}
+
+.avatar img {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 1.875rem;
+    /* border: 1px solid rgba(255, 255, 255, 0.50); */
+}
+
+.caixa-mensagem {
+    display: flex;
+    width: 100%;
+}
+
+.mensagem {
+    background-color: #7B4AE21A;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #7B4AE2 !important;
+}
+
+.nome h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    width: 94%;
+    margin: 1rem 0 0.25rem;
+}
+
+.nome p {
+    width: 94%;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.125rem;
+}
+
+.links-cv-wpp {
+    width: 100%;
+    margin: 1.2975rem 0 4.375rem;
+}
+
+.cv-wpp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88.4%;
+    color: rgba(123, 74, 226, 0.50);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box-cv-wpp {
+    display: flex;
+}
+
+.borda-wpp {
+    border-radius: 8px;
+    border: 1px solid rgba(123, 74, 226, 0.50);
+    padding: 0.75rem 0.625rem;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.experience-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65vw;
+    border-radius: 16px;
+    border: 1px solid rgba(123, 74, 226, 0.50);
+    padding: 2.265rem 1.25rem 1.875rem;
+    gap: 0.5rem;
+}
+
+.experience-2 {
+    display: none;
+}
+
+.experience-box span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#exp-trabalhos {
+    border: 1px solid rgba(123, 74, 226, 0.10);
+    background: rgba(123, 74, 226, 0.10);
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.aboutme-box h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 50%;
+    margin: 0 0 2rem;
+}
+
+.aboutme-box p {
+    color: rgba(255, 255, 255, 0.50);
+    text-align: justify;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    margin-bottom: 1.86rem;
+}
+
+.aboutme-descricao-desktop {
+    display: none;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(123, 74, 226, 0.10);
+    padding: 0.875rem 0 0.8125rem 0;
+    gap: 0.8125rem;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .box-linha-1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 11.625rem 0 6.25rem;
+    }
+
+    .box-linha-2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 6.25rem 0 9.125rem;
+    }
+
+    .linha {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: rgba(123, 74, 226, 0.20);   
+        /* margin: 20px 0 20px 0;      */
+        /* top: 50%; */
+        /* transform: translateY(-50%); */
+        z-index: -1;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .menu-topo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+        background: rgba(123, 74, 226, 0.05);
+        width: 85%;
+        margin: 2.375rem 0 1.875rem;
+    }
+
+    .logo {
+        margin: 11px 0 13px 24px;
+    }
+
+    .navegacao-topo ul {
+        display: flex;
+        gap: 1rem;
+        margin-right: 1.4375rem;
+    }
+
+    .navegacao-topo a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .navegacao-topo .home {
+        color: rgba(123, 74, 226, 0.50);
+        font-weight: 700;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 87.2%;
+    }
+
+    .mensagem {
+        border-radius: 1rem;
+        padding: 5px 10px;
+        font-size: 1.25rem !important;
+    }
+
+    .apresentacao-nome-cargo {
+        order: -1;
+        margin-right: 8.8%;
+    }
+
+    .nome h1 {
+        font-size: 3.25rem;
+    }
+
+    .nome p {
+        width: 411.33px;
+        margin-bottom: 1.6725rem;
+    }
+
+    .avatar img {
+        width: 556px;
+        margin: auto;
+        /* margin: 0 338px 0 139px; */
+    }
+
+    .links-cv-wpp {
+        min-width: 200px;
+        margin: auto;
+    }
+
+    .cv-wpp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: auto;
+        color: rgba(123, 74, 226, 0.50);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .esconder-mobile {
+        display: inline;
+    }
+
+    .esconder-desktop {
+        display: none;
+    }
+
+    /* .box-cv-wpp {
+        display: flex;
+    }
+    
+    .borda-wpp {
+        border-radius: 8px;
+        border: 1px solid rgba(123, 74, 226, 0.50);
+        padding: 0.75rem 0.625rem;
+    } */
+
+
+    .experience {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .experience-2 {
+        display: flex;
+    }
+
+    .experience-box {
+        flex-direction: column;
+        width: 244px;
+        height: 198px;
+        padding: 0;
+    }
+
+    .experience-box-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 898px;
+        height: 110px;
+        border-radius: 16px;
+        gap: 0.5rem;
+        background: rgba(123, 74, 226, 0.10);
+        margin-top: 2rem;
+        font-size: 1rem;
+        color: #7B4AE2;
+        font-weight: 400;
+    }
+
+    .experience-box-2 span {
+        font-size: 2rem;
+        color: #7B4AE2;
+        font-weight: 700;
+    }
+
+    .experience-box-2 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 205.555px;
+        margin: 0 20px;
+    }
+
+    .experience-box span {
+        font-size: 2rem;
+    }
+
+    #exp-programador {
+        order: 1;
+    }
+
+    #exp-trabalhos {
+        order: 2;
+    }
+
+    #exp-designer {
+        order: 3;
+    }
+
+    .aboutme-container {
+        display: flex;
+        flex-direction: row;
+        gap: 14.6875rem;
+
+    }
+
+    /* .aboutme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 5rem;
+    } */
+
+    .profile-pic img {
+        /* display: flex; */
+        width: 460px;
+
+        /* align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem; */
+    }
+
+    .aboutme-box {
+
+
+    }
+
+    .aboutme-box h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        width: 926px;
+        margin: 0 0 2rem;
+    }
+
+    .aboutme-box p {
+        color: rgba(255, 255, 255, 0.50);
+        text-align: justify;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.5625rem;
+        margin-bottom: 1.86rem;
+    }
+
+    .aboutme-descricao-mobile {
+        display: none;
+    }
+
+    .aboutme-descricao-desktop {
+        display: block;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        border: 1px solid rgba(255, 255, 255, 0.50);
+        padding: 0.875rem 0 0.8125rem 0;
+        gap: 200px;
+        color: rgba(255, 255, 255, 0.50);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    footer p {
+        border: 1px solid rgba(255, 255, 255, 0.50);
+    }
+
+    footer .social-medias {
+        border: 1px solid rgba(255, 255, 255, 0.50);
+    }
+
+}
