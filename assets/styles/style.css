@@ -6,16 +6,11 @@
     border: 0;
 }
 
-/* :root {
-    --base-font-size: 30px;
-} */
-
 body {
     background: #090E16;
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    /* font-size: var(--base-font-size); */
 }
 
 header {
@@ -62,7 +57,6 @@ main {
     width: 100vw;
     height: auto;
     margin-bottom: 1.875rem;
-    /* border: 1px solid rgba(255, 255, 255, 0.50); */
 }
 
 .caixa-mensagem {
@@ -94,6 +88,8 @@ main {
 
 .links-cv-wpp {
     width: 100%;
+    display: flex;
+    justify-content: center;
     margin: 1.2975rem 0 4.375rem;
 }
 
@@ -101,7 +97,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 88.4%;
     color: rgba(123, 74, 226, 0.50);
     font-size: 1rem;
     font-weight: 600;
@@ -109,6 +104,7 @@ main {
 
 .box-cv-wpp {
     display: flex;
+    margin-right: 26px;
 }
 
 .borda-wpp {
@@ -190,7 +186,6 @@ main {
     display: none;
 }
 
-
 footer {
     display: flex;
     flex-direction: column;
@@ -202,7 +197,6 @@ footer {
     font-size: 0.75rem;
     font-weight: 400;
 }
-
 
 @media screen and (min-width: 600px) {
 
@@ -224,10 +218,7 @@ footer {
         position: absolute;
         width: 100%;
         height: 1px;
-        background: rgba(123, 74, 226, 0.20);   
-        /* margin: 20px 0 20px 0;      */
-        /* top: 50%; */
-        /* transform: translateY(-50%); */
+        background: rgba(123, 74, 226, 0.20);
         z-index: -1;
     }
 
@@ -298,12 +289,12 @@ footer {
     .avatar img {
         width: 556px;
         margin: auto;
-        /* margin: 0 338px 0 139px; */
     }
 
     .links-cv-wpp {
         min-width: 200px;
         margin: auto;
+        justify-content: flex-end;
     }
 
     .cv-wpp {
@@ -324,16 +315,9 @@ footer {
         display: none;
     }
 
-    /* .box-cv-wpp {
-        display: flex;
+    .box-cv-wpp {
+        margin-bottom: 0.5rem;
     }
-    
-    .borda-wpp {
-        border-radius: 8px;
-        border: 1px solid rgba(123, 74, 226, 0.50);
-        padding: 0.75rem 0.625rem;
-    } */
-
 
     .experience {
         display: flex;
@@ -407,30 +391,10 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 14.6875rem;
-
     }
-
-    /* .aboutme {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        margin-top: 5rem;
-    } */
 
     .profile-pic img {
-        /* display: flex; */
         width: 460px;
-
-        /* align-items: center;
-        justify-content: center;
-        margin-bottom: 2rem; */
-    }
-
-    .aboutme-box {
-
-
     }
 
     .aboutme-box h1 {
@@ -458,11 +422,10 @@ footer {
     }
 
     footer {
+        display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
-
-        border: 1px solid rgba(255, 255, 255, 0.50);
         padding: 0.875rem 0 0.8125rem 0;
         gap: 200px;
         color: rgba(255, 255, 255, 0.50);
@@ -471,11 +434,8 @@ footer {
     }
 
     footer p {
-        border: 1px solid rgba(255, 255, 255, 0.50);
-    }
-
-    footer .social-medias {
-        border: 1px solid rgba(255, 255, 255, 0.50);
+        margin-left: 9.125rem;
+        margin-right: 17rem;
     }
 
 }
