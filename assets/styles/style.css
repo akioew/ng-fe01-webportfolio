@@ -31,6 +31,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 99.9%;
+    margin: auto;
 }
 
 .social-medias {
@@ -267,25 +268,24 @@ footer {
     .mensagem {
         border-radius: 1rem;
         padding: 5px 10px;
-        font-size: 1.25rem !important;
+        font-size: 0.75rem !important;
     }
 
     .apresentacao-nome-cargo {
         order: -1;
-        margin-right: 8.8%;
     }
 
     .nome h1 {
-        font-size: 3.25rem;
+        font-size: 1.5rem;
     }
 
     .nome p {
-        width: 411.33px;
+        width: 100px;
         margin-bottom: 1.6725rem;
     }
 
     .avatar img {
-        width: 556px;
+        width: 200px;
         margin: auto;
     }
 
@@ -315,7 +315,6 @@ footer {
 
     .experience {
         flex-direction: row;
-        gap: 5rem;
     }
 
     .experience-2 {
@@ -323,9 +322,8 @@ footer {
     }
 
     .experience-box {
-        width: 244px;
-        height: 198px;
-        padding: 0;
+        width: 160px;
+        padding: 0.25rem;
     }
 
     .experience-box-2 {
@@ -333,19 +331,19 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 898px;
+        width: 574px;
         height: 110px;
         border-radius: 16px;
         gap: 0.5rem;
         background: rgba(123, 74, 226, 0.10);
         margin-top: 2rem;
-        font-size: 1rem;
+        font-size: 0.85rem;
         color: #7B4AE2;
         font-weight: 400;
     }
 
     .experience-box-2 span {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #7B4AE2;
         font-weight: 700;
     }
@@ -359,7 +357,7 @@ footer {
     }
 
     .experience-box span {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
 
     #exp-programador {
@@ -377,20 +375,20 @@ footer {
     .aboutme-container {
         display: flex;
         flex-direction: row;
-        gap: 14.6875rem;
+        gap: 1rem;
     }
 
     .profile-pic img {
-        width: 460px;
+        width: 200px;
     }
 
     .aboutme-box h1 {
-        font-size: 3rem;
-        width: 926px;
+        font-size: 2rem;
+        width: 340px;
     }
 
     .aboutme-box p {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 
     .aboutme-descricao-mobile {
@@ -404,8 +402,80 @@ footer {
     footer {
         flex-direction: row-reverse;
         justify-content: flex-end;
-        gap: 200px;
+        gap: 50px;
         font-size: 1rem;
+    }
+
+    footer p {
+        margin-left: 9.125rem;
+        margin-right: 14rem;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    header {
+        font-size: 18px;
+    }
+
+    .avatar img {
+        width: 400px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .nome h1 {
+        font-size: 2.75rem;
+    }
+
+    .nome p {
+        width: 300px;
+        margin-bottom: 1.6725rem;
+    }
+
+    .mensagem {
+        font-size: 1.25rem !important;
+    }
+
+    .experience {
+        gap: 77px;
+    }
+
+    .experience-box {
+        width: 206px;
+        padding: 2.265rem 1.25rem 1.875rem;
+    }
+
+    .experience-box span {
+        font-size: 1.5rem;
+    }
+
+    .experience-box-2 {
+        width: 898px;
+    }
+
+    .aboutme-container {
+        gap: 5rem;
+    }
+
+    .profile-pic img {
+        width: 340px;
+    }
+
+    .aboutme-box h1 {
+        font-size: 2.5rem;
+        width: 550px;
+    }
+
+    .aboutme-box p {
+        font-size: 1rem;
+    }
+
+    footer {
+        gap: 200px;
     }
 
     footer p {
@@ -415,10 +485,44 @@ footer {
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1300px) {
 
-    header {
-        font-size: 18px;
+    .nome h1 {
+        font-size: 3.25rem;
+    }
+
+    .nome p {
+        width: 411px;
+    }
+
+    .avatar img {
+        width: 556px;
+    }
+
+    .aboutme-box h1 {
+        font-size: 3rem;
+        width: 550px;
+    }
+
+    .aboutme-box p {
+        font-size: 1.125rem;
+    }
+
+    .aboutme-container {
+        gap: 14.6875rem;
+    }
+
+    .profile-pic img {
+        width: 460px;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+    .apresentacao-nome-cargo {
+        order: -1;
+        margin-right: 8.8%;
     }
 
 }
