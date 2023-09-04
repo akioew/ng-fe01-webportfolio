@@ -200,17 +200,17 @@ footer {
 
 @media screen and (min-width: 600px) {
 
-    .box-linha-1 {
+    .box-linha {
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+
+    .linha-1 {
         margin: 11.625rem 0 6.25rem;
     }
 
-    .box-linha-2 {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .linha-2 {
         margin: 6.25rem 0 9.125rem;
     }
 
@@ -225,7 +225,7 @@ footer {
     header {
         display: flex;
         justify-content: center;
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 400;
     }
 
@@ -260,9 +260,7 @@ footer {
     }
 
     .apresentacao {
-        display: flex;
         flex-direction: row;
-        align-items: center;
         width: 87.2%;
     }
 
@@ -298,13 +296,9 @@ footer {
     }
 
     .cv-wpp {
-        display: flex;
         flex-direction: column;
         align-items: flex-end;
         width: auto;
-        color: rgba(123, 74, 226, 0.50);
-        font-size: 1rem;
-        font-weight: 600;
     }
 
     .esconder-mobile {
@@ -320,14 +314,8 @@ footer {
     }
 
     .experience {
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
         gap: 5rem;
-        font-size: 1rem;
-        font-weight: 400;
-        text-align: center;
     }
 
     .experience-2 {
@@ -335,7 +323,6 @@ footer {
     }
 
     .experience-box {
-        flex-direction: column;
         width: 244px;
         height: 198px;
         padding: 0;
@@ -399,18 +386,11 @@ footer {
 
     .aboutme-box h1 {
         font-size: 3rem;
-        font-weight: 800;
         width: 926px;
-        margin: 0 0 2rem;
     }
 
     .aboutme-box p {
-        color: rgba(255, 255, 255, 0.50);
-        text-align: justify;
         font-size: 1.125rem;
-        font-weight: 400;
-        line-height: 1.5625rem;
-        margin-bottom: 1.86rem;
     }
 
     .aboutme-descricao-mobile {
@@ -422,20 +402,23 @@ footer {
     }
 
     footer {
-        display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
-        align-items: center;
-        padding: 0.875rem 0 0.8125rem 0;
         gap: 200px;
-        color: rgba(255, 255, 255, 0.50);
         font-size: 1rem;
-        font-weight: 400;
     }
 
     footer p {
         margin-left: 9.125rem;
         margin-right: 17rem;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    header {
+        font-size: 18px;
     }
 
 }
