@@ -187,6 +187,109 @@ main {
     display: none;
 }
 
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.portfolio h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 1rem 0 2rem;
+    width: 150px;
+}
+
+.trabalhos-caixas {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.trabalho-caixa-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 116px;
+    color: rgba(123, 74, 226, 0.50);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid rgba(123, 74, 226, 0.50);
+    flex-shrink: 0;
+}
+
+.trabalho-caixa-titulo img {
+    width: 27px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.portfolio-trabalhos {
+    display: flex;
+    gap: 16px;
+}
+
+.portfolio-caixa {
+    padding: 27px 24px 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(123, 74, 226, 0.50);
+    width: 252px;
+    height: 314px;
+    margin: 29px 0 20px;
+}
+
+/* .portfolio-caixa-titulo {
+    border: 1px solid rgba(123, 74, 226, 0.50);
+} */
+
+.portfolio-caixa-titulo h1 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 0px 8px;
+}
+
+.portfolio-caixa-titulo p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    width: 240px;
+}
+
+.portfolio-caixa-botoes {
+    display: flex;
+    gap: 0.5rem;
+    margin: 9.85px 0 16px;
+}
+
+.portfolio-caixa-botoes p {
+    display: flex;
+    border-radius: 8px;
+    width: 83px;
+    height: 30px;
+    color: #7B4AE2;
+    background-color: rgba(123, 74, 226, 0.10);
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.portfolio-caixa img {
+    width: 252px;
+    height: 160px;
+}
+
+.portfolio-mais-projetos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgba(123, 74, 226, 0.50);
+    font-size: 14px;
+    font-weight: 600;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -397,6 +500,67 @@ footer {
 
     .aboutme-descricao-desktop {
         display: block;
+    }
+
+    .portfolio {
+        width: 87.2%;
+    }
+
+    .portfolio h1 {
+        font-size: 20px;
+        width: 500px;
+    }
+
+    .trabalho-caixa-titulo {
+        border-radius: 16px;
+    }
+
+    .portfolio-caixa-titulo p {
+        width: auto;
+        height: 100px;
+    }
+
+    .trabalhos-projetos-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .portfolio-trabalhos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+
+    .trabalho-caixa-titulo {
+        width: 184px;
+        height: 60px;
+        font-size: 20px
+    }
+
+    .portfolio-caixa {
+        padding: 27px 30px 30px;
+        border-radius: 16px;
+        border: 1px solid rgba(123, 74, 226, 0.50);
+        width: 300px;
+        height: 403px;
+        margin: 29px 0 20px;
+    }
+
+    .fundo-roxo-desktop {
+        border: none;
+        background: rgba(123, 74, 226, 0.10);
+    }
+
+    .botao-online-desktop {
+        
+    }
+
+    .portfolio-caixa img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .portfolio-mais-projetos {
+        font-size: 20px;
     }
 
     footer {
